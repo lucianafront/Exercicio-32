@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de formulário</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form action="" autocomplete="off" id="form">
+        <h1>Cadastro de usuário</h1>
+        <p>Preencha os campos abaixo para realizar o cadastro</p>
+ 
+        <div class="address">
+
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="not-null"  size="80" id="nome" name="nome">
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="text" class="not-null"  size="80" id="email" name="email">
+            </div>
+            <div class="input-group">
+                <label for="cpf">CPF</label>
+                <input type="text" class="not-null" size="50"id="cpf" name="cpf">
+            </div>
+            <div class="input-group">
+                <label for="cep">CEP</label>
+                <input type="text" class="not-null" size="50"  id="cep" name="cep">
+            </div>
+            
+            <div class="input-group">
+                <label for="rua">Rua</label>
+                <input type="text" disabled id="rua"size="80">
+            </div>
+            
+            <div class="input-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" disabled  id="bairro"size="80">
+            </div>
+            
+            <div class="input-group">
+                <label for="cidade">Cidade</label>
+                <input type="text" disabled  id="cidade"size="30">
+            </div>
+            
+            <div class="input-group">
+                <label for="uf">UF</label>
+                <input type="text" disabled id="uf"size="10">
+            </div>
+        </div>
+
+
+        <button>Cadastrar</button>
+    </form>
+
+    <div id="mensagem"></div>
+    <script src="./js/form.js"></script>
+
+</body>
+</html>
